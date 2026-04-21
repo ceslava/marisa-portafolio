@@ -66,41 +66,36 @@ p {
     margin-top: -25rem;
     position: relative;
     pointer-events: none;
+    /* overflow-x: hidden; */
+   
 }
 
 .ilustr-hero > * {
     grid-area: stack;
+    position: absolute;
 }
 
 .luna-hero {
     z-index: 0;
-    /* width: 55rem; */
-    position: absolute;
-    top: 0.03rem;
+    
+    
     will-change: transform, opacity;
 }
 
 .nubes-hero {
     z-index: 1;
-    /* width: 100rem; */
-    position: absolute;
-    top: 14rem;
+   
     will-change: transform, opacity;
 }
 
 .agua-hero {
     z-index: 2;
-    /* width: 100rem; */
-    position: absolute;
-    top: 23.25rem;
+    
     will-change: transform, opacity;
 }
 
 .barco-hero {
     z-index: 3;
-    /* width: 20rem; */
-    position: absolute;
-    left: calc(50% - 10rem);
-    top: 30%;
+    
     will-change: transform, opacity;
 }
