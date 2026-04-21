@@ -1,0 +1,41 @@
+/* px lo utilizamos para unidades pequeñas: border, padding, margin... */
+/* em lo utilizamos para todo lo de arriba y sobre todo tipografía (varía según la medida del contenedor donde esté) */
+/* la mejor es REM: relativo al font size del documento raíz, se utiliza en todo y sobre todo tipografía */
+/* % es cuando queremos que haya un ancho relativo al contenedor en el que esté */
+/* vh-vw relativos al viewport */
+
+/* VARIABLES COLORES CORPORATIVOS */
+:root {
+    --clr-corporativo-blanco: hsla(0, 0%, 100%, 1);
+    --clr-corporativo-fondo-dark: rgb(18, 8, 35);
+
+    --clr-corporativo-primario: hsla(261, 48%, 21%, 1);
+    --clr-corporativo-primario-rosa-oscuro: hsl(287, 46%, 25%, 1);
+    --clr-corporativo-primario-lila: hsl(260, 30%, 83%, 1);
+
+    --clr-corporativo-secundario-rosa-medio: hsl(294, 33%, 45%, 1);
+    --clr-corporativo-secundario-rosa-claro: hsl(315, 39%, 72%, 1);
+    --clr-corporativo-secundario-melocotón: hsl(24, 82%, 85%, 1);
+
+    /* Variables de transparencia (Alpha) */
+    --clr-corporativo-lavanda-low: hsla(268, 33%, 78%, 0.3);
+}
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: var(--clr-corporativo-primario-lila);
+    background: var(--clr-corporativo-fondo-dark);
+}
+
+main {
+    min-height: 200vh;
+}
+

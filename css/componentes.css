@@ -1,0 +1,155 @@
+/* TARJETAS DE ACOMPAÑAMIENTO */
+.acomp-card {
+    border: 1px solid var(--clr-corporativo-lavanda-low);
+    border-radius: 20px;
+    padding: 2rem;
+    margin: 25rem 3rem 4rem 3rem;
+    --clr-corporativo-lavanda-low: hsla(268, 33%, 78%, 0.06);
+    background: var(--clr-corporativo-lavanda-low);
+}
+
+.ayuda-noche {
+    padding: 0 2rem 0 0;
+    /* añadimos un flex-basis de 0 y que pueda crecer para que las tarjetas tengan el mismo tamaño aunque el contenido sea diferente con la propiedad acortada flex */
+    flex: 1;
+}
+
+/* SECCIÓN ACOMPAÑAMIENTO */
+.acomp-section {
+    opacity: 0;
+    transform: translateY(60px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    padding: 0 4rem;
+}
+
+.acomp-section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+h2 {
+    font-size: clamp(1.8rem, 4vw, 3rem);
+    margin-bottom: 1rem;
+}
+
+h2 span {
+    color: var(--clr-corporativo-secundario-rosa-medio);
+}
+
+p.acomp-subtitle {
+    font-weight: 500;
+    margin-bottom: 2.2rem;
+    font-size: 1.3rem;
+}
+
+h3 {
+    color: var(--clr-corporativo-secundario-rosa-claro);
+    font-size: 1.5rem;
+    margin-bottom: 0.9rem;
+    margin-top: 0.01rem;
+}
+
+p.p-acomp {
+    font-weight: 70;
+    font-size: 1rem;
+}
+
+.estrella-icono {
+    margin-bottom: 0.2rem;
+}
+
+.luna-estrella {
+    margin-bottom: 0.4rem;
+}
+
+.luna-icono {
+    margin-bottom: 0.5rem;
+}
+
+/* BOTONES */
+.acomp-row {
+    
+    justify-content: center;
+    gap: 2rem;
+}
+
+.acomp-btn {
+    border: 1px solid var(--clr-corporativo-lavanda-low);
+    padding: 0.4rem 1rem 0.1rem 1rem;
+    border-radius: 20px;
+    transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-shadow: 0 0 5px rgba(122, 111, 157, 0.4);
+    --clr-corporativo-lavanda-low: hsla(268, 33%, 78%, 0.4);
+    background: var(--clr-corporativo-lavanda-low);
+    margin-top: 1.1rem;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: var(--clr-corporativo-primario-lila);
+    cursor: pointer;
+}
+
+.acomp-btn:hover {
+    color: var(--clr-corporativo-secundario-melocotón);
+    box-shadow: 0 0 5px rgba(122, 111, 157, 0.8),
+        0 0 30px rgba(122, 111, 157, 0.3);
+}
+
+/* GUÍA NOCTURNA */
+.guia-nocturna-home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem;
+}
+
+.guia-nocturna-home h2 {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.guia-nocturna-home .guia-centro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.guia-texto {
+    position: absolute;
+    max-width: 17rem;
+    text-align: right;
+    margin-top: 19rem;
+    /* margin-right: 33rem; */
+    left: 3vw;
+    /* Cuando un elemento lo sacamos del flujo con position absolute usamos top, left, right, bottom para moverlo  */
+}
+
+.guia-texto span {
+    color: var(--clr-corporativo-secundario-rosa-claro);
+    font-weight: 600;
+}
+
+.guia-nocturna-home .acomp-btn {
+    --clr-corporativo-secundario-rosa-claro: hsl(315, 39%, 72%, 0.7);
+    background-color: var(--clr-corporativo-secundario-rosa-claro);
+}
+
+.guia-nocturna-home .acomp-btn p {
+    color: var(--clr-corporativo-primario-rosa-oscuro);
+    font-weight: 700;
+}
+
+.viento-oeste {
+    width: 40rem;
+    max-width: 100%;
+    height: auto;
+    margin-right: -2rem;
+}
+
+/* FOOTER */
+footer {
+    background: var(--clr-corporativo-primario);
+    color: var(--clr-corporativo-primario-lila);
+    padding: 2rem 4rem;
+    text-align: center;
+}

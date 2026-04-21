@@ -1,0 +1,41 @@
+/* UTILIDADES */
+.flex {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.min-100-vh {
+    min-height: calc(100vh - 16px);
+}
+
+.w-full {
+    max-width: 100%;
+}
+
+.flex-space-between {
+    justify-content: space-between;
+}
+
+.flex-align-items-c {
+    align-items: center;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.grid {
+    display: grid;
+}
+
+.grid-3 {
+    grid-template-columns: 200px repeat(3, 1fr);
+}
+
+.column-end {
+    grid-row: span 2;
+}

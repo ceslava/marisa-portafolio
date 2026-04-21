@@ -1,0 +1,39 @@
+/* HEADER */
+header {
+    padding: 2rem 4rem;
+    border-bottom: 1px solid var(--clr-corporativo-lavanda-low);
+}
+
+/* LOGO */
+.logo {
+    width: 10rem;
+    height: auto;
+}
+
+/* NAVEGACIÓN */
+nav a {
+    color: var(--clr-corporativo-primario-lila);
+    text-decoration: none;
+    margin-left: 2rem;
+    font-size: 0.8rem;
+    letter-spacing: 0.1rem;
+    font-weight: 400;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: var(--clr-corporativo-blanco);
+}
+
+nav .btn {
+    border: 1px solid var(--clr-corporativo-lavanda-low);
+    padding: 0.7rem 2.7rem;
+    border-radius: 20px;
+    transition: color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    box-shadow: 0 0 5px var(--clr-corporativo-lavanda-low);
+}
+
+nav .btn:hover {
+    box-shadow: 0 0 20px var(--clr-corporativo-lavanda-low);
+    color: var(--clr-corporativo-blanco);
+}

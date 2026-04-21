@@ -1,0 +1,668 @@
+/* px lo utilizamos para unidades pequeñas: border, padding, margin... */
+/* em lo utilizamos para todo lo de arriba y sobre todo tipografía (varía según la medida del contenedor donde esté) */
+/* la mejor es REM: relativo al font size del documento raíz, se utiliza en todo y sobre todo tipografía */
+/* % es cuando queremos que haya un ancho relativo al contenedor en el que esté */
+/* vh-vw relativos al viewport */
+
+
+/* Capa 1: pequeñas y lentas → parecen lejanas */
+.estrellas-1 {
+    position: fixed;
+    width: 1px;
+    height: 1px;
+    background: transparent;
+    box-shadow:
+        120vw 80vw 0 hsla(268, 33%, 78%, 0.6),
+        340px 45px 0 hsla(39, 100%, 86%, 0.4),
+        560px 120px 0 hsla(268, 33%, 78%, 0.7),
+        780px 30px 0 hsla(39, 100%, 86%, 0.5),
+        200px 200px 0 hsla(268, 33%, 78%, 0.5),
+        450px 180px 0 hsla(39, 100%, 86%, 0.6),
+        670px 220px 0 hsla(268, 33%, 78%, 0.4),
+        900px 90px 0 hsla(39, 100%, 86%, 0.5),
+        1100px 150px 0 hsla(268, 33%, 78%, 0.6),
+        1300px 60px 0 hsla(39, 100%, 86%, 0.4),
+        80px 320px 0 hsla(268, 33%, 78%, 0.5),
+        290px 380px 0 hsla(39, 100%, 86%, 0.7),
+        510px 340px 0 hsla(268, 33%, 78%, 0.4),
+        730px 400px 0 hsla(39, 100%, 86%, 0.6),
+        950px 360px 0 hsla(268, 33%, 78%, 0.5),
+        1150px 420px 0 hsla(39, 100%, 86%, 0.4),
+        1350px 310px 0 hsla(268, 33%, 78%, 0.6),
+        60px 520px 0 hsla(39, 100%, 86%, 0.5),
+        270px 560px 0 hsla(268, 33%, 78%, 0.7),
+        490px 500px 0 hsla(39, 100%, 86%, 0.4),
+        710px 580px 0 hsla(268, 33%, 78%, 0.6),
+        930px 540px 0 hsla(39, 100%, 86%, 0.5),
+        1130px 610px 0 hsla(268, 33%, 78%, 0.4),
+        1330px 480px 0 hsla(39, 100%, 86%, 0.6),
+        160px 680px 0 hsla(268, 33%, 78%, 0.5),
+        380px 720px 0 hsla(39, 100%, 86%, 0.7),
+        600px 660px 0 hsla(268, 33%, 78%, 0.4),
+        820px 740px 0 hsla(39, 100%, 86%, 0.5),
+        1040px 700px 0 hsla(268, 33%, 78%, 0.6),
+        1240px 780px 0 hsla(39, 100%, 86%, 0.4),
+        40px 840px 0 hsla(268, 33%, 78%, 0.5),
+        260px 900px 0 hsla(39, 100%, 86%, 0.6),
+        480px 860px 0 hsla(268, 33%, 78%, 0.4),
+        700px 920px 0 hsla(39, 100%, 86%, 0.7),
+        920px 880px 0 hsla(268, 33%, 78%, 0.5),
+        1120px 940px 0 hsla(39, 100%, 86%, 0.4),
+        1320px 820px 0 hsla(268, 33%, 78%, 0.6),
+        190px 1020px 0 hsla(39, 100%, 86%, 0.5),
+        410px 1060px 0 hsla(268, 33%, 78%, 0.7),
+        630px 1000px 0 hsla(39, 100%, 86%, 0.4),
+        850px 1080px 0 hsla(268, 33%, 78%, 0.5),
+        1050px 1040px 0 hsla(39, 100%, 86%, 0.6),
+        1250px 1100px 0 hsla(268, 33%, 78%, 0.4);
+    animation: flotar-1 7s ease-in-out infinite;
+}
+
+/* Capa 2: medianas y velocidad media */
+.estrellas-2 {
+    position: fixed;
+    width: 2px;
+    height: 2px;
+    background: transparent;
+    box-shadow:
+        220px 110px 0 hsla(39, 100%, 86%, 0.7),
+        490px 55px 0 hsla(268, 33%, 78%, 0.8),
+        750px 170px 0 hsla(39, 100%, 86%, 0.5),
+        1010px 80px 0 hsla(268, 33%, 78%, 0.7),
+        170px 290px 0 hsla(39, 100%, 86%, 0.6),
+        440px 330px 0 hsla(268, 33%, 78%, 0.5),
+        700px 270px 0 hsla(39, 100%, 86%, 0.8),
+        960px 350px 0 hsla(268, 33%, 78%, 0.6),
+        1220px 210px 0 hsla(39, 100%, 86%, 0.5),
+        100px 470px 0 hsla(268, 33%, 78%, 0.7),
+        370px 510px 0 hsla(39, 100%, 86%, 0.6),
+        630px 450px 0 hsla(268, 33%, 78%, 0.5),
+        890px 530px 0 hsla(39, 100%, 86%, 0.8),
+        1150px 490px 0 hsla(268, 33%, 78%, 0.6),
+        250px 650px 0 hsla(39, 100%, 86%, 0.5),
+        520px 690px 0 hsla(268, 33%, 78%, 0.7),
+        780px 630px 0 hsla(39, 100%, 86%, 0.6),
+        1040px 710px 0 hsla(268, 33%, 78%, 0.5),
+        1300px 570px 0 hsla(39, 100%, 86%, 0.8),
+        130px 830px 0 hsla(268, 33%, 78%, 0.6),
+        400px 870px 0 hsla(39, 100%, 86%, 0.5),
+        660px 810px 0 hsla(268, 33%, 78%, 0.7),
+        920px 890px 0 hsla(39, 100%, 86%, 0.6),
+        1180px 850px 0 hsla(268, 33%, 78%, 0.5);
+    animation: flotar-2 9s ease-in-out infinite;
+}
+
+/* Capa 3: grandes y rápidas → parecen cercanas */
+.estrellas-3 {
+    position: fixed;
+    width: 3px;
+    height: 3px;
+    background: transparent;
+    box-shadow:
+        310px 140px 1px hsla(39, 100%, 86%, 0.8),
+        640px 70px 1px hsla(268, 33%, 78%, 0.9),
+        870px 200px 1px hsla(39, 100%, 86%, 0.7),
+        180px 380px 1px hsla(268, 33%, 78%, 0.8),
+        550px 420px 1px hsla(39, 100%, 86%, 0.9),
+        820px 360px 1px hsla(268, 33%, 78%, 0.7),
+        1100px 440px 1px hsla(39, 100%, 86%, 0.8),
+        290px 560px 1px hsla(268, 33%, 78%, 0.9),
+        620px 600px 1px hsla(39, 100%, 86%, 0.7),
+        950px 540px 1px hsla(268, 33%, 78%, 0.8),
+        1230px 620px 1px hsla(39, 100%, 86%, 0.9),
+        120px 740px 1px hsla(268, 33%, 78%, 0.7),
+        460px 780px 1px hsla(39, 100%, 86%, 0.8),
+        790px 720px 1px hsla(268, 33%, 78%, 0.9),
+        1060px 800px 1px hsla(39, 100%, 86%, 0.7);
+    animation: flotar-3 9s ease-in-out infinite;
+}
+
+/* Capa 1: flota arriba y abajo suavemente */
+@keyframes flotar-1 {
+
+    0%,
+    100% {
+        transform: translateY(0px) translateX(0px);
+    }
+
+    50% {
+        transform: translateY(-15px) translateX(8px);
+    }
+}
+
+/* Capa 2: flota en diagonal opuesta */
+@keyframes flotar-2 {
+
+    0%,
+    100% {
+        transform: translateY(0px) translateX(0px);
+    }
+
+    50% {
+        transform: translateY(12px) translateX(-10px);
+    }
+}
+
+/* Capa 3: movimiento más pequeño, parece más lejana */
+@keyframes flotar-3 {
+
+    0%,
+    100% {
+        transform: translateY(0px) translateX(0px);
+    }
+
+    50% {
+        transform: translateY(-8px) translateX(5px);
+    }
+}
+
+
+
+
+/* VARIABLES COLORES CORPORATIVOS */
+:root {
+
+    --clr-corporativo-blanco: hsla(0, 0%, 100%, 1);
+
+    --clr-corporativo-fondo-dark: rgb(18, 8, 35);
+
+    --clr-corporativo-primario: hsla(261, 48%, 21%, 1);
+    --clr-corporativo-primario-rosa-oscuro: hsl(287, 46%, 25%, 1);
+    --clr-corporativo-primario-lila: hsl(260, 30%, 83%, 1);
+
+    --clr-corporativo-secundario-rosa-medio: hsl(294, 33%, 45%, 1);
+    --clr-corporativo-secundario-rosa-claro: hsl(315, 39%, 72%, 1);
+    --clr-corporativo-secundario-melocotón: hsl(24, 82%, 85%, 1);
+
+    /* Variables de transparencia (Alpha) */
+    --clr-corporativo-lavanda-low: hsla(268, 33%, 78%, 0.3);
+}
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: var(--clr-corporativo-primario-lila);
+    background: var(--clr-corporativo-fondo-dark);
+
+
+}
+
+main {
+    min-height: 200vh;
+
+}
+
+
+/* clase utilitaria */
+.flex {
+    display: flex;
+    gap: .5rem
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.min-100-vh {
+    min-height: calc(100vh - 16px);
+}
+
+.w-full {
+    max-width: 100%;
+}
+
+.flex-space-between {
+    /* el justify content se adapta al eje que tengan los elementos (si es row se adaptará horizontalmente, si es column se adaptará verticalmente) */
+    justify-content: space-between;
+}
+
+.flex-align-items-c {
+    align-items: center;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.grid {
+    display: grid;
+}
+
+.grid-3 {
+    /* primero numero de columnas y después ancho */
+    grid-template-columns: 200 px repeat(3, 1fr);
+}
+
+.column-end {
+    grid-row: span 2;
+}
+
+
+header {
+    /* norte sur, este oeste */
+    padding: 2rem 4rem;
+    border-bottom: 1px solid var(--clr-corporativo-lavanda-low);
+
+}
+
+/* logo nav */
+.logo {
+    width: 10rem;
+    height: auto;
+}
+
+nav a {
+    color: var(--clr-corporativo-primario-lila);
+    text-decoration: none;
+    margin-left: 2rem;
+    font-size: 0.8rem;
+    letter-spacing: .1rem;
+    font-weight: 400;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: var(--clr-corporativo-blanco);
+}
+
+nav .btn {
+    border: 1px solid var(--clr-corporativo-lavanda-low);
+    /* norte sur, este oeste */
+    padding: 0.7rem 2.7rem;
+    border-radius: 20px;
+    transition: color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    box-shadow: 0 0 5px var(--clr-corporativo-lavanda-low);
+}
+
+nav .btn:hover {
+    box-shadow:
+        0 0 20px var(--clr-corporativo-lavanda-low);
+    color: var(--clr-corporativo-blanco);
+}
+
+/* HERO SECTION */
+.hero {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0rem 12rem 4rem;
+}
+
+article .text {
+    z-index: 2;
+    will-change: opacity, transform;
+}
+
+h1 {
+    font-size: 4.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+h1 span {
+    color: var(--clr-corporativo-secundario-rosa-medio);
+}
+
+.subtitle {
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: 1.1rem;
+    /* Para que esté en una sola línea.... no lo entiendo */
+    white-space: nowrap;
+}
+
+p {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    max-width: 35vw;
+    font-weight: 300;
+}
+
+.cta {
+    margin-top: 1rem;
+    /* norte sur, este oeste */
+    padding: 1rem 4rem;
+    border: 1px solid var(--clr-corporativo-lavanda-low);
+    border-radius: 30px;
+    /* poner en clase utilitaria */
+    cursor: pointer;
+    font-weight: 500;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: var(--clr-corporativo-primario-lila);
+    font-size: 1.1rem;
+    background: var(--clr-corporativo-lavanda-low);
+
+    transition: box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
+
+    box-shadow: 0 0 5px var(--clr-corporativo-lavanda-low);
+}
+
+.cta:hover {
+    color: var(--clr-corporativo-secundario-melocotón);
+    box-shadow: 0 0 5px var(--clr-corporativo-lavanda-low),
+        0 0 20px var(--clr-corporativo-lavanda-low);
+}
+
+
+
+
+
+
+
+/* ILUSTRACIÓN HERO BARCO EN AGUA */
+
+.ilustr-hero {
+    /* z-index debe ir en el contenedor??? */
+    z-index: 0;
+
+    display: grid;
+    place-items: center;
+
+    grid-template-areas: "stack";
+
+    /* por qué aquí no puedo poner top a secas??? */
+    margin-top: -25rem;
+    position: relative;
+
+    /* esto qué significa???? */
+    pointer-events: none;
+}
+
+/* por qué esto debe tener también el stack???? ni siquiera sé lo que es el stack */
+
+.ilustr-hero>* {
+
+    /* esto no lo entiendo */
+    grid-area: stack;
+    /* Todos los elementos van a la misma celda, uno encima de otro */
+}
+
+.luna-hero {
+    z-index: 0;
+
+    width: 55rem;
+
+    position: absolute;
+    top: .03rem;
+
+    will-change: transform, opacity;
+}
+
+.nubes-hero {
+    z-index: 1;
+
+    width: 100rem;
+
+    position: absolute;
+    top: 14rem;
+
+    will-change: transform, opacity;
+}
+
+.agua-hero {
+    z-index: 2;
+
+    width: 100rem;
+
+    position: absolute;
+    top: 23.25rem;
+
+    will-change: transform, opacity;
+}
+
+.barco-hero {
+    z-index: 3;
+
+    width: 20rem;
+
+    position: absolute;
+    left: 39.5rem;
+    top: 13rem;
+
+    will-change: transform, opacity;
+}
+
+
+
+
+
+
+
+
+
+/* otra sección: acompañamiento */
+
+.acomp-card {
+    border: 1px solid var(--clr-corporativo-lavanda-low);
+    border-radius: 20px;
+    padding: 2rem;
+    margin: 25rem 3rem 4rem 3rem;
+    --clr-corporativo-lavanda-low: hsla(268, 33%, 78%, 0.06);
+    background: var(--clr-corporativo-lavanda-low);
+}
+
+.ayuda-noche {
+    padding: 0 2rem 0 0;
+}
+
+.acomp-section {
+    opacity: 0;
+    transform: translateY(60px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    /* norte sur, este oeste */
+    padding: 0 4rem;
+
+}
+
+.acomp-section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+h2 span {
+    color: var(--clr-corporativo-secundario-rosa-medio);
+}
+
+p.acomp-subtitle {
+    font-weight: 500;
+    margin-bottom: 2.2rem;
+    font-size: 1.3rem;
+}
+
+h3 {
+    color: var(--clr-corporativo-secundario-rosa-claro);
+    font-size: 1.5rem;
+    margin-bottom: .9rem;
+    margin-top: .01rem;
+}
+
+p.p-acomp {
+    font-weight: 70;
+    font-size: 1rem;
+}
+
+.estrella-icono {
+    margin-bottom: .2rem;
+}
+
+.luna-estrella {
+    margin-bottom: .4rem;
+}
+
+.luna-icono {
+    margin-bottom: .5rem;
+}
+
+.acomp-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.acomp-btn {
+    border: 1px solid var(--clr-corporativo-lavanda-low);
+    padding: 0.4rem 1rem 0.1rem 1rem;
+    border-radius: 20px;
+    transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+    box-shadow: 0 0 5px rgba(122, 111, 157, 0.4);
+
+    --clr-corporativo-lavanda-low: hsla(268, 33%, 78%, 0.4);
+    background: var(--clr-corporativo-lavanda-low);
+    margin-top: 1.1rem;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: var(--clr-corporativo-primario-lila);
+    cursor: pointer;
+}
+
+.acomp-btn:hover {
+    color: var(--clr-corporativo-secundario-melocotón);
+    box-shadow: 0 0 5px rgba(122, 111, 157, 0.8),
+        0 0 30px rgba(122, 111, 157, 0.3);
+}
+
+.guia-nocturna-home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem;
+}
+
+.guia-nocturna-home h2 {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.guia-nocturna-home .guia-centro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.guia-texto {
+    position: absolute;
+    max-width: 17rem;
+    text-align: right;
+    margin-top: 19rem;
+    margin-right: 33rem;
+}
+
+.guia-texto span {
+    color: var(--clr-corporativo-secundario-rosa-claro);
+    font-weight: 600;
+}
+
+.guia-nocturna-home .acomp-btn {
+    --clr-corporativo-secundario-rosa-claro: hsl(315, 39%, 72%, 0.7);
+    background-color: var(--clr-corporativo-secundario-rosa-claro);
+}
+
+.guia-nocturna-home .acomp-btn p {
+    color: var(--clr-corporativo-primario-rosa-oscuro);
+    font-weight: 700;
+}
+
+.viento-oeste {
+    width: 40rem;
+    height: auto;
+    margin-right: -2rem;
+}
+
+
+
+
+
+
+
+
+
+/* ÚNETE */
+/* 
+.unete-wrap {
+    --clr-corporativo-lavanda-low: hsla(268, 33%, 78%, 0.04);
+    background: var(--clr-corporativo-lavanda-low);
+    padding: 3.5rem 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 4rem;
+    border-radius: var(--clr-corporativo-fondo-dark);
+}
+
+
+
+.unete-wrap h1 {
+    font-size: 2.8rem;
+    font-weight: 800;
+    color: var(--clr-corporativo-primario-lila);
+    line-height: 1.1;
+    margin: 0 0 1.2rem;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.unete-desc {
+    font-size: 0.9rem;
+    color: var(--clr-corporativo-primario-lila);
+    font-weight: 100;
+    margin: 0;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.unete-form-side {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.unete-label {
+    font-size: 0.65rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--clr-corporativo-primario-lila);
+    font-family: var(--font-sans);
+}
+
+.unete-input {
+    background: var(--clr-corporativo-fondo-dark);
+    border: 1px solid var(--clr-corporativo-primario);
+    padding: 0.75rem 1rem;
+    font-size: 0.95rem;
+    color: var(--clr-corporativo-primario-lila);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+.unete-btn {
+    background: var(--clr-corporativo-primario-lila);
+    border: none;
+    padding: 0.85rem 1rem;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--clr-corporativo-fondo-dark);
+    cursor: pointer;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+
+}
+
+.unete-disclaimer {
+    font-size: 0.72rem;
+    --clr-corporativo-lavanda-low: hsla(268, 33%, 78%, 0.5);
+    color: var(--clr-corporativo-lavanda-low);
+    font-family: var(--font-sans);
+} */
