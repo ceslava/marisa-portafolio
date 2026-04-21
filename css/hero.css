@@ -63,7 +63,7 @@ p {
     display: grid;
     place-items: center;
     grid-template-areas: "stack";
-    margin-top: -25rem;
+    /* margin-top: -25rem; */
     position: relative;
     pointer-events: none;
     /* overflow-x: hidden; */
@@ -90,7 +90,7 @@ p {
 
 .agua-hero {
     z-index: 2;
-    
+    top:50%;
     will-change: transform, opacity;
 }
 
