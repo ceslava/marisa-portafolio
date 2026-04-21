@@ -2,7 +2,8 @@
 .hero {
     display: flex;
     flex-direction: column;
-    padding: 2rem 0rem 12rem 4rem;
+    /* padding: 2rem 0rem 12rem 4rem; */
+    padding: 2rem;
 }
 
 article .text {
@@ -32,7 +33,9 @@ h1 span {
 p {
     font-size: 1.1rem;
     margin-bottom: 0.5rem;
-    max-width: 35vw;
+    /* max-width: 35vw; */
+    /* para textos mejor la unidad ch que es relativa al ancho del caracter 0, así el texto se adapta mejor a diferentes tamaños de pantalla */
+    max-width: 50ch;
     font-weight: 300;
 }
 
@@ -64,8 +67,8 @@ p {
     place-items: center;
     grid-template-areas: "stack";
     /* margin-top: -25rem; */
-    /* separamos del texto superior más si es desktop que en móvil gracias a vw */
-    margin-top: 15vw;
+    /* separamos del texto superior más si es desktop que en móvil gracias a vw ponlo a tu gusto, también puedes usar media queries */
+    margin-top: 25vw;
     position: relative;
     pointer-events: none;
     /* overflow-x: hidden; */
