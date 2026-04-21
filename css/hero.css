@@ -64,6 +64,8 @@ p {
     place-items: center;
     grid-template-areas: "stack";
     /* margin-top: -25rem; */
+    /* separamos del texto superior más si es desktop que en móvil gracias a vw */
+    margin-top: 15vw;
     position: relative;
     pointer-events: none;
     /* overflow-x: hidden; */
